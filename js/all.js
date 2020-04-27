@@ -7,6 +7,8 @@ $('.serviceList li h3').addClass('serviceListItemTitle');
 $('.serviceList li p').addClass('serviceListItemText');
 
 $('.customer li').addClass('customerListCard');
+$('.customer li p').addClass('cardText');
+$('.customer li span').addClass('cardUpdateTime');
 
 $('.footerFlex li').addClass('footerNavItem');
 
