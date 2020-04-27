@@ -1,4 +1,4 @@
-@import "reset.css"
+@import 'reset.css'
 
 /*------------------------
  Global
@@ -14,24 +14,27 @@ html,
 body
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif
   height: 100%
+  font-size: 16px
+  line-height: 24px
 
 img 
   max-width: 100%
+  max-height: 100% 
   display: block
 
 p 
-  line-height: 24px
+  // line-height: 24px
 
 p,
 li
-  font-size: 16px
-
-span
-  // font-size: 20px
+  // font-size: 16px
 
 a
   color: inherit
   text-decoration: none
+
+a:hover
+  opacity: 0.7
 
 .max1200
   max-width: 1200px
@@ -77,8 +80,21 @@ header
   height: calc(100% - 100px)
   background: url(../images/68.png)
   background-repeat: no-repeat
+  display: flex
+  align-items: center
+.headerText
+  flex-basis: 100%
+  text-align: right
+.subTitle
+  font-size: 36px
+  color: #650300
+  margin-bottom: 20px
+.bannerTitle
+  color: #650300
+  font-size: 64px
 
-  
+
+
 /*------------------------
  Service
  ------------------------*/
@@ -140,43 +156,56 @@ header
   background: url(../images/nick-owuor-astro-nic-visuals-54Q_HvMWtVE-unsplash.png)
   background-repeat: no-repeat
   padding-bottom: 480px
-  
+
 .designFlex_row
   display: flex
-  flex-basis: 100%
+  flex-wrap: wrap
   justify-content: space-between
-.designFlex_row_2
+  align-content: space-between
+.designFlex_row_more
   display: flex
   flex-wrap: wrap
-  flex-basis: 62.2%
   align-content: space-between
-
-  
-.flexMore
+.designFlex_row_btn
   display: flex
-  flex-wrap: wrap
-  flex-basis: 85%
-  align-content: space-between
-
-
-.moreBtnOut
-  padding-right: 100px
-  position: relative
+  width: 100%
   overflow: hidden
+
+.designFlex_row_2_left
+  flex-basis: 37.5%
+.designFlex_row_2_right
+  flex-basis: 62%
+.designFlex_row_3_left
+  flex-basis: 14%
+.designFlex_row_3_right
+  flex-basis: 85%
+  // transform: translate(5px, 0)
+.designFlex_row_4_left
+  flex-basis: 50%
+.designFlex_row_4_center
+  flex-basis: 35%
+  position: relative
+.designFlex_row_4_right
+  flex-basis: 15%
+
+
 .moreBtn
   position: absolute
-  width: 100%
-  height: 105px
-  top: 0
+  width: 150%
+  top: 50%
+  left: 50%
+  transform: translate(-25%, -50%)
   background: white
-  margin: 30px
-  font-size: 72px
   color: #AA0601
-  padding: 10px 20px
+  padding: 25px
   font-weight: bold
-.moreBtn:after
-  content: url(../images/ic_arrow_forward_24px.svg)
-  margin-left: 25px
+  display: flex
+.moreText
+  font-size: 72px
+  line-height: 72px
+.arrow
+  margin: 15px 0 0 25px
+  flex-shrink: 0
 
 
 .designBuyFlex
@@ -192,9 +221,13 @@ header
   text-align: center
 .designBuyFlex_col_1:first-child
   background: url(../images/14.png)
+  background-size: cover
+  background-repeat: no-repeat
   margin-right: 15px
 .designBuyFlex_col_1:last-child
   background: url(../images/39.png)
+  ackground-size: cover
+  background-repeat: no-repeat
 
 
 /*------------------------
@@ -209,6 +242,7 @@ header
 .customerListCard
   flex-basis: 23%
   border: 1px solid #DEE2E6
+  background: white
 .cardInfo
   padding: 20px
 .cardText
@@ -253,7 +287,7 @@ header
 .agreeBtn
   display: none
 .agreeBtnText:before
-  content: ''
+  content: ' '
   display: inline-block
   width: 20px
   height: 20px
@@ -278,29 +312,32 @@ footer
   display: flex
   justify-content: space-between
 .footerNav
+  display: flex
   padding-bottom: 15px
 .footerNavItem
-  display: inline-block
-  margin-right: 45px
+  padding-right: 45px
 .footerNavItem:last-child
   margin-right: 0
 .socialBtn
   transform: translate(0, -15px)
+  display: flex
+  li
+    padding-left: 30px
 .footeHr
   opacity: 0.7
 .tel,.mail
-  display: block
+  display: flex
   font-size: 36px
   margin: 20px 0
-.tel:before,
-.mail:before
-  transform: translate(0,7px)
-  display: inline-block
-  width: 60px
-.tel:before
-  content: url(../images/ic_phone_48px.svg)
-.mail:before
-  content: url(../images/ic_mail_outline_24px.svg)
+  align-items: center
+.telIcon,
+.mailIcon
+  flex-basis: 10%
+  margin-right: 10px
+.copyNav
+  display: flex
+.copyItem
+  padding-left: 45px
 .copyright
   transform: translate(0, -17px)
 .copyright:before

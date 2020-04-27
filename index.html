@@ -6,13 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>第三週_切版作業</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="(max-width: 768px)" href="css/table.css" />
+    <link rel="stylesheet" media="(max-width: 480px)" href="css/mobile.css" />
 </head>
 
 <body>
+    <!-- header star -->
     <header>
-        <h1>
-            <img src="images/logo-new.png" alt="">
-        </h1>
+        <a href="">
+            <h1>
+                <img src="images/logo-new.png" alt="">
+            </h1>
+        </a>
         <nav>
             <ul>
                 <li><a href="">系列鏡框</a></li>
@@ -22,12 +27,16 @@
             </ul>
         </nav>
     </header>
+    <!-- header end -->
+    <!-- headerBanner star -->
     <div class="headerBanner">
-        <div class="headerText">
-            <p>Promise-Desert 2020 早春系列</p>
-            <h2>看得清，才能看得遠</h2>
+        <div class="headerText max1200">
+            <p class="subTitle">Promise-Desert 2020 早春系列</p>
+            <h2 class="bannerTitle">看得清，才能看得遠</h2>
         </div>
     </div>
+    <!-- headerBanner end -->
+    <!-- service star -->
     <div class="service row_padding64">
         <h2>用專業的心，做專業的事</h2>
         <ul class="serviceList max1200">
@@ -61,6 +70,8 @@
             </li>
         </ul>
     </div>
+    <!-- service end -->
+    <!-- classic star -->
     <div class="classic max1200 row_padding64">
         <h2>經典系列鏡框</h2>
         <div class="classicFlex">
@@ -76,31 +87,41 @@
             <div class="classicName">functional</div>
         </div>
     </div>
+    <!-- classic end -->
+    <!-- design star -->
     <div class="design row_padding64">
         <h2 class="titleColor">聯名設計鏡框</h2>
         <div class="max1540">
             <div class="designFlex_row">
-                <div class="desginFlex_col">
+                <div class="designFlex_row_2_left">
                     <img src="images/zac-wolff-2qfYizn95pk-unsplash.png" alt="">
                 </div>
-                <div class="desginFlex_col designFlex_row_2">
-                    <div class="desginFlex_col">
+                <div class="designFlex_row designFlex_row_2_right">
+                    <div class="">
                         <img src="images/61.png" alt="">
                     </div>
                     <div class="designFlex_row">
-                        <div class="desginFlex_col">
+                        <div class="designFlex_row_3_left">
                             <img src="images/24.png" alt="">
                         </div>
-                        <div class="desginFlex_col flexMore">
-                            <div class="desginFlex_col">
+                        <div class="designFlex_row_more designFlex_row_3_right">
+                            <div class="">
                                 <img src="images/34.png" alt="">
                             </div>
-                            <div class="designFlex_row">
-                                <div class="desginFlex_col"></div>
-                                <div class="desginFlex_col moreBtnOut">
+                            <div class="designFlex_row_btn">
+                                <div class="designFlex_row_4_left"></div>
+                                <div class="designFlex_row_4_center">
                                     <img src="images/5.png" alt="" srcset="">
-                                    <a href="" class="moreBtn">MORE</a>
+                                    <div class="moreBtn">
+                                        <div class="moreText">
+                                            <a href="">MORE</a>
+                                        </div>
+                                        <div class="arrow">
+                                            <img src="images/ic_arrow_forward_24px.svg" alt="">
+                                        </div>
+                                    </div>
                                 </div>
+                                <div class="designFlex_row_4_right"></div>
                             </div>
                         </div>
                     </div>
@@ -112,6 +133,8 @@
             </div>
         </div>
     </div>
+    <!-- design end -->
+    <!-- customer star -->
     <div class="customer row_padding64">
         <h2 class="titleColor">顧客推薦</h2>
         <div class="max1200">
@@ -155,6 +178,8 @@
             </ul>
         </div>
     </div>
+    <!-- customer end -->
+    <!-- contact star -->
     <div class="contact row_padding64">
         <h2>聯絡我們</h2>
         <div class="max800">
@@ -176,21 +201,34 @@
             </form>
         </div>
     </div>
+    <!-- contact end -->
+    <!-- footer star -->
     <footer class="row_padding64">
         <div class="max1200">
             <div class="footerFlex">
                 <div class="footerFlex_col">
                     <nav class="">
                         <ul class="footerNav">
-                            <li><a href="">首頁</a></li>
-                            <li><a href="">系列鏡框</a></li>
-                            <li><a href="">門市據點</a></li>
-                            <li><a href="">部落格</a></li>
-                            <li><a href="">常見問題</a></li>
+                            <li class="footerNavItem"><a href="">首頁</a></li>
+                            <li class="footerNavItem"><a href="">系列鏡框</a></li>
+                            <li class="footerNavItem"><a href="">門市據點</a></li>
+                            <li class="footerNavItem"><a href="">部落格</a></li>
+                            <li class="footerNavItem"><a href="">常見問題</a></li>
                         </ul>
                     </nav>
-                    <a href="tel:0800-000-000" class="tel">0800-000-000</a>
-                    <a href="mailto:glasses@business.com" class="mail">glasses@business.com</a>
+                    <div class="tel">
+                        <div class="telIcon">
+                            <img src="images/ic_phone_48px.svg" alt="">
+                        </div>
+                        
+                        <a href="tel:0800-000-000">0800-000-000</a>
+                    </div>
+                    <div class="mail">
+                        <div class="mailIcon">
+                            <img src="images/ic_mail_outline_24px.svg" alt="">
+                        </div>
+                        <a href="mailto:glasses@business.com" class="">glasses@business.com</a>
+                    </div>
                 </div>
                 <div class="footerFlex_col">
                     <ul class="socialBtn">
@@ -203,13 +241,14 @@
             <hr class="footeHr">
             <div class="footerFlex footerFlexCopy">
                 <div class="copyright">Copyright © 2020 Glasses.All rights reserved.</div>
-                <ul>
-                    <li><a href="">隱私權政策</a></li>
-                    <li><a href="">服務條款</a></li>
+                <ul class="copyNav">
+                    <li class="copyItem"><a href="">隱私權政策</a></li>
+                    <li class="copyItem"><a href="">服務條款</a></li>
                 </ul>
             </div>
         </div>
     </footer>
+    <!-- footer end -->
 </body>
 <script src="https://code.jquery.com/jquery-3.5.0.slim.min.js"
     integrity="sha256-MlusDLJIP1GRgLrOflUQtshyP0TwT/RHXsI1wWGnQhs=" crossorigin="anonymous"></script>
