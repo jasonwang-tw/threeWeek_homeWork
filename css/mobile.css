@@ -7,11 +7,35 @@
 /*------------------------
  header
  ------------------------*/
+header {
+  padding: 20px 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative; }
+
 .bannerTitle {
   font-size: 32px; }
 
 .row_padding64 {
   padding: 24px 12px; }
+
+.headerNav {
+  display: none; }
+
+.weblogo,
+.burger {
+  display: inline-block; }
+
+.weblogo {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  transform: translate(-50%, 0); }
+
+.burger {
+  width: 24px; }
 
 /*------------------------
  service
@@ -42,6 +66,19 @@
  ------------------------*/
 .design {
   padding: 24px 12px 350px; }
+
+.designBuyFlex {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.designBuyFlex_col_1:first-child {
+  margin-right: 0;
+  margin-bottom: 20px; }
+
+.designBuyFlex_col_1 {
+  padding: 150px 0;
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%; }
 
 /*------------------------
  customer

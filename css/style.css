@@ -98,6 +98,9 @@ header {
   color: #650300;
   font-size: 64px; }
 
+.burger {
+  display: none; }
+
 /*------------------------
  Service
  ------------------------*/

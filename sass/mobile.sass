@@ -7,10 +7,26 @@
 /*------------------------
  header
  ------------------------*/
+
+header
+    padding: 20px 40px
+    display: flex
+    position: relative
 .bannerTitle
     font-size: 32px
 .row_padding64
     padding: 24px 12px
+.headerNav
+    display: none
+.weblogo,
+.burger
+    display: inline-block
+.weblogo
+    position: absolute
+    left: 50%
+    transform: translate(-50%,0)
+.burger
+    width: 24px
 
 /*------------------------
  service
@@ -37,6 +53,14 @@
  ------------------------*/
 .design
     padding: 24px 12px 350px
+.designBuyFlex
+    flex-wrap: wrap
+.designBuyFlex_col_1:first-child
+    margin-right: 0
+    margin-bottom: 20px
+.designBuyFlex_col_1
+    padding: 150px 0
+    flex-basis: 100%
 /*------------------------
  customer
  ------------------------*/
@@ -59,7 +83,7 @@
     font-size: 16px
     margin: 0px 0
 .socialBtn
-    transform: translate(0, 0) 
+    transform: translate(0, 0)
     li
         flex-basis: 22%
         padding-left: 20px
