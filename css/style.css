@@ -239,8 +239,7 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
-  overflow: hidden; }
+  width: 100%; }
 
 .designFlex_row_2_left {
   -ms-flex-preferred-size: 37.5%;
@@ -276,7 +275,7 @@ header {
 
 .moreBtn {
   position: absolute;
-  width: 150%;
+  width: 125%;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-25%, -50%);
@@ -288,16 +287,35 @@ header {
   font-weight: bold;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.moreBtn:hover .more_2 {
+  margin-top: -100px; }
+
+.moreBtn:hover .more_3 {
+  margin-top: -200px; }
+
+.moreBtn:hover .arrow {
+  margin-right: 5%; }
 
 .moreText {
   font-size: 72px;
-  line-height: 72px; }
+  line-height: 72px;
+  position: relative; }
+
+.moreText span {
+  position: absolute;
+  margin-top: -10px;
+  z-index: 1000; }
 
 .arrow {
-  margin: 15px 0 0 25px;
+  margin: 10px 0 0 0px;
   -ms-flex-negative: 0;
-  flex-shrink: 0; }
+  flex-shrink: 0;
+  margin-right: 10%; }
 
 .designBuyFlex {
   display: -webkit-box;
