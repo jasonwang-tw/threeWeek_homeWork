@@ -3,7 +3,7 @@
 $('h2').addClass('max1200 titleName');
 
 
-$('header li').addClass('navItem');
+// $('header li').addClass('navItem');
 $('.headerText h2').removeClass('max1200 titleName');
 
 
@@ -19,6 +19,12 @@ $('.customer li span').addClass('cardUpdateTime');
 
 // $('.footerFlex li').addClass('footerNavItem');
 
+$('.burger').click(function(){
+    $('.burLine_1').toggleClass('burLine_1_romove');
+    $('.burLine_2').toggleClass('burLine_2_romove');
+    $('.burLine_3').toggleClass('burLine_3_romove');
+    $('.headerNav').toggleClass('headerNavOpen');
+});
 
 $('.classic .classicName').each(function(i){
     n=i+1;

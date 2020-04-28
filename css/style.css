@@ -5,6 +5,9 @@
 *,
 *:before,
 *:after {
+  -webkit-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
@@ -82,7 +85,8 @@ header {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-position: center center; }
+  background-position: center center;
+  background-size: cover; }
 
 .headerText {
   -ms-flex-preferred-size: 100%;
@@ -166,16 +170,25 @@ header {
   -ms-transform: translateY(5px);
   transform: translateY(5px);
   margin: 0 20px 0;
-  display: inline-block; }
+  display: inline-block;
+  background: #AA0601;
+  content: ' ';
+  width: 50px;
+  height: 50px;
+  -webkit-mask-size: 50px 50px;
+  mask-size: 50px 50px; }
 
 .classicNameIcon_1:before {
-  content: url(../images/iconfinder_44_2529968.svg); }
+  -webkit-mask: url(../images/iconfinder_44_2529968.svg) no-repeat 50% 50%;
+  mask: url(../images/iconfinder_44_2529968.svg) no-repeat 50% 50%; }
 
 .classicNameIcon_2:before {
-  content: url(../images/Layer_1.svg); }
+  -webkit-mask: url(../images/Layer_1.svg) no-repeat 50% 50%;
+  mask: url(../images/Layer_1.svg) no-repeat 50% 50%; }
 
 .classicNameIcon_3:before {
-  content: url(../images/Page-1.svg); }
+  -webkit-mask: url(../images/Page-1.svg) no-repeat 50% 50%;
+  mask: url(../images/Page-1.svg) no-repeat 50% 50%; }
 
 /*------------------------
  Design
@@ -183,7 +196,8 @@ header {
 .design {
   background: url(../images/nick-owuor-astro-nic-visuals-54Q_HvMWtVE-unsplash.png);
   background-repeat: no-repeat;
-  padding-bottom: 480px; }
+  padding-bottom: 480px;
+  background-size: cover; }
 
 .designFlex_row {
   display: -webkit-box;
@@ -241,6 +255,9 @@ header {
 .designFlex_row_4_right {
   -ms-flex-preferred-size: 15%;
   flex-basis: 15%; }
+
+.designFlex_row_mobile_2 img {
+  display: none; }
 
 .moreBtn {
   position: absolute;

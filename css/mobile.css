@@ -8,7 +8,8 @@
  header
  ------------------------*/
 header {
-  padding: 20px 40px;
+  height: 50px;
+  padding: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -21,7 +22,22 @@ header {
   padding: 24px 12px; }
 
 .headerNav {
-  display: none; }
+  position: absolute;
+  margin-top: 116px;
+  width: 100%;
+  left: -100%; }
+  .headerNav .navItem {
+    margin-left: 0;
+    border-bottom: 1px solid white;
+    text-align: center;
+    display: block;
+    background: #AA0601; }
+    .headerNav .navItem a {
+      padding: 10px 0;
+      display: block; }
+
+.headerNavOpen {
+  left: 0; }
 
 .weblogo,
 .burger {
@@ -30,6 +46,7 @@ header {
 .weblogo {
   position: absolute;
   left: 50%;
+  width: 48px;
   -webkit-transform: translate(-50%, 0);
   -ms-transform: translate(-50%, 0);
   transform: translate(-50%, 0); }
@@ -37,9 +54,46 @@ header {
 .burger {
   width: 24px; }
 
+.headerBanner {
+  height: 395px; }
+
+.burger {
+  position: relative; }
+  .burger hr {
+    position: absolute;
+    width: 100%;
+    border: 1.5px solid white; }
+
+.burLine_1 {
+  margin-top: -7px; }
+
+.burLine_1_romove {
+  margin-top: 0px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg); }
+
+.burLine_2 {
+  margin: 0; }
+
+.burLine_2_romove {
+  opacity: 0; }
+
+.burLine_3 {
+  margin-top: 7px; }
+
+.burLine_3_romove {
+  margin-top: 0px;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg); }
+
 /*------------------------
  service
  ------------------------*/
+.service {
+  padding: 32px 55px; }
+
 .serviceListItem {
   -ms-flex-preferred-size: 100%;
   flex-basis: 100%; }
@@ -54,9 +108,20 @@ header {
   position: relative; }
 
 .classicName {
-  left: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
   color: white;
-  position: absolute; }
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .classicName:before {
+    background: white; }
 
 .classicFlex:nth-child(3) {
   margin: 10px 0; }
@@ -79,6 +144,43 @@ header {
   padding: 150px 0;
   -ms-flex-preferred-size: 100%;
   flex-basis: 100%; }
+
+.designFlex_row_mobile_1 {
+  display: none; }
+
+.designFlex_row_mobile_2 img {
+  display: block; }
+
+.designFlex_row_2_left {
+  -ms-flex-preferred-size: 46.5%;
+  flex-basis: 46.5%; }
+
+.designFlex_row_2_right {
+  -ms-flex-preferred-size: 52.5%;
+  flex-basis: 52.5%; }
+
+.designFlex_row_3_right {
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%; }
+
+.designFlex_row_btn {
+  margin-top: 5px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.designFlex_row_4_left {
+  -ms-flex-preferred-size: 18.5%;
+  flex-basis: 18.5%;
+  margin-right: 5px; }
+
+.designFlex_row_4_center {
+  -ms-flex-preferred-size: 60%;
+  flex-basis: 60%; }
+
+.designFlex_row_4_right {
+  -ms-flex-preferred-size: 20%;
+  flex-basis: 20%; }
 
 /*------------------------
  customer
