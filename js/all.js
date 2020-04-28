@@ -32,3 +32,8 @@ $('.burger').click(function(){
 
 // AOS.js
 AOS.init();
+
+// windows.load
+$(window).load(function () {
+    $('.loader-wrap').delay(3000).fadeOut();
+});
