@@ -184,6 +184,9 @@ header {
   -ms-flex-preferred-size: 20%;
   flex-basis: 20%; }
 
+.moreBtn {
+  width: 110%; }
+
 .moreText span {
   margin-top: 0; }
 
