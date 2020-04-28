@@ -1,24 +1,28 @@
 
 // 命名
+// 標題
 $('h2').addClass('max1200 titleName');
 
-
-// $('header li').addClass('navItem');
+// banner標題
 $('.headerText h2').removeClass('max1200 titleName');
 
-
+// 服務項目
 $('.serviceList li').addClass('serviceListItem');
 $('.serviceList li h3').addClass('serviceListItemTitle');
 $('.serviceList li p').addClass('serviceListItemText');
 
-
+// 顧客卡片
 $('.customer li').addClass('customerListCard');
 $('.customer li p').addClass('cardText');
 $('.customer li span').addClass('cardUpdateTime');
 
+// 經典鏡框Icon
+$('.classic .classicName').each(function(i){
+    n=i+1;
+    $(this).addClass('classicNameIcon_'+n);
+});
 
-// $('.footerFlex li').addClass('footerNavItem');
-
+// 漢堡菜單
 $('.burger').click(function(){
     $('.burLine_1').toggleClass('burLine_1_romove');
     $('.burLine_2').toggleClass('burLine_2_romove');
@@ -26,7 +30,5 @@ $('.burger').click(function(){
     $('.headerNav').toggleClass('headerNavOpen');
 });
 
-$('.classic .classicName').each(function(i){
-    n=i+1;
-    $(this).addClass('classicNameIcon_'+n);
-});
+// AOS.js
+AOS.init();

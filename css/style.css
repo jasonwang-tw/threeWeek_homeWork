@@ -58,6 +58,7 @@ a:hover {
  Header
  ------------------------*/
 header {
+  position: fixed;
   height: 100px;
   color: white;
   background: #AA0601;
@@ -67,10 +68,13 @@ header {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  top: 0;
+  width: 100%;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 20px 90px; }
+  padding: 20px 90px;
+  z-index: 100; }
   header .navItem {
     display: inline-block;
     margin-left: 20px; }
@@ -86,7 +90,8 @@ header {
   -ms-flex-align: center;
   align-items: center;
   background-position: center center;
-  background-size: cover; }
+  background-size: cover;
+  margin-top: 100px; }
 
 .headerText {
   -ms-flex-preferred-size: 100%;
@@ -380,11 +385,18 @@ header {
 .agreeBtn {
   display: none; }
 
+.contact .agreeBtnText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
 .agreeBtnText:before {
   content: ' ';
   display: inline-block;
   width: 20px;
   height: 20px;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
   margin-right: 10px;
   -webkit-transform: translate(0, 4px);
   -ms-transform: translate(0, 4px);
