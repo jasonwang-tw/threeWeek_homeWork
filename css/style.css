@@ -480,6 +480,10 @@ footer {
   flex-basis: 10%;
   margin-right: 10px; }
 
+.footerFlex_col_right {
+  -ms-flex-preferred-size: 60%;
+  flex-basis: 60%; }
+
 .socialBtn {
   -webkit-transform: translate(0, -15px);
   -ms-transform: translate(0, -15px);

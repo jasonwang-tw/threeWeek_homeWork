@@ -23,7 +23,8 @@ header {
 
 .headerNav {
   position: absolute;
-  margin-top: 116px;
+  margin-top: 51px;
+  top: 0;
   width: 100%;
   left: -100%; }
   .headerNav .navItem {
