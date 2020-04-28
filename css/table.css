@@ -8,6 +8,16 @@
   padding: 64px 48px; }
 
 /*------------------------
+ header
+ ------------------------*/
+.subTitle {
+  font-size: 20px;
+  margin-bottom: 20px; }
+
+.bannerTitle {
+  font-size: 48px; }
+
+/*------------------------
  service
  ------------------------*/
 .serviceList {
