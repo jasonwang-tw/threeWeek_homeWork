@@ -1,5 +1,5 @@
 
-// 命名
+// 命名 srat
 // 標題
 $('h2').addClass('max1200 titleName');
 
@@ -29,6 +29,7 @@ $('.burger').click(function(){
     $('.burLine_3').toggleClass('burLine_3_romove');
     $('.headerNav').toggleClass('headerNavOpen');
 });
+// 命名 end
 
 // AOS.js
 AOS.init();
