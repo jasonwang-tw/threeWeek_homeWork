@@ -503,7 +503,10 @@ footer {
   transform: translate(0, -15px);
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end; }
   .socialBtn li {
     padding-left: 30px; }
 
