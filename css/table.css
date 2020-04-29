@@ -122,8 +122,8 @@
 
 .telIcon,
 .mailIcon {
-  -ms-flex-preferred-size: 7%;
-  flex-basis: 7%; }
+  -ms-flex-preferred-size: 10%;
+  flex-basis: 10%; }
 
 .socialBtn {
   -webkit-box-pack: end;
