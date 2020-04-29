@@ -1,4 +1,5 @@
 @import url(reset.css);
+@import url(loading.css);
 /*------------------------
  Global
  ------------------------*/
@@ -55,7 +56,7 @@ a:hover {
   color: white; }
 
 /*------------------------
- Header
+ loading
  ------------------------*/
 .loader_wrap {
   position: fixed;
@@ -64,9 +65,21 @@ a:hover {
   z-index: 1000;
   top: 0;
   left: 0;
-  background: white;
-  display: none; }
+  background: white; }
 
+.loaderText {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  font-size: 24px; }
+
+/*------------------------
+ Header
+ ------------------------*/
 header {
   position: fixed;
   height: 100px;

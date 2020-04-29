@@ -1,4 +1,5 @@
 @import 'reset.css'
+@import 'loading.css'
 
 /*------------------------
  Global
@@ -60,9 +61,8 @@ a:hover
 .titleColor
   color: white
 
-
 /*------------------------
- Header
+ loading
  ------------------------*/
 .loader_wrap
   position: fixed
@@ -72,7 +72,18 @@ a:hover
   top: 0
   left: 0
   background: white
-  display: none
+.loaderText
+  position: fixed
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  z-index: 1000
+  font-size: 24px
+  
+/*------------------------
+ Header
+ ------------------------*/
+
 header
   position: fixed
   height: 100px

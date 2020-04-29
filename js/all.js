@@ -33,7 +33,7 @@ $('.burger').click(function(){
 // AOS.js
 AOS.init();
 
-// windows.load
-$(window).load(function () {
-    $('.loader-wrap').delay(3000).fadeOut();
-});
+// windows loading
+window.onload = function() { 
+    $('.loader_wrap').delay(1000).fadeOut('1000');
+};
